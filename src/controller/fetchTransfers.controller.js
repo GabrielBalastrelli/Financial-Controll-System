@@ -1,5 +1,5 @@
-import { fetchTransfers } from "../service/get.service.js";
-import { showTransactions } from "../views/showTransactions.js";
+import { fetchTransfers } from '../service/get.service.js';
+import { showTransactions } from '../views/showTransactions.js';
 
 export async function fecthTransfersController() {
   try {

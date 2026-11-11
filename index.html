@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Gerenciador Financeiro</title>
+    <link rel="stylesheet" href="./src/style/style.css" />
     <script defer type="module" src="./app.js"></script>
   </head>
   <body>
@@ -18,12 +19,15 @@
       <div id="lstAccounts"></div>
     </div>
     <div>
-      <form method="">
+      <form>
+        <input id="inId" type="hidden" />
+        <input id="inTransactionDate" type="hidden" />
         <label for="inName">Nome: </label>
         <input id="inName" type="text" />
         <label for="inValue">Valor:</label>
         <input id="inValue" type="text" />
-        <input id="btnSend" value="Cadastrar" type="button" />
+        <input id="btnSend" value="Salvar" type="button" />
+        <input id="btnClear" value="Limpar" type="button" />
       </form>
     </div>
   </body>

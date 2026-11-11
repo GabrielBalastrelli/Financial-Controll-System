@@ -1,10 +1,10 @@
 export async function createTransaction(data) {
-  const url = "http://localhost:3000/transactions";
+  const url = 'http://localhost:3000/transactions';
 
   const res = await fetch(url, {
-    method: "POST",
+    method: 'POST',
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify(data),
   })

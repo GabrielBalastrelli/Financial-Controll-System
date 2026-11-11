@@ -1,14 +1,12 @@
-import Transaction from "../models/transaction.model.js";
-import { createTransaction } from "../service/post.service.js";
-import { validateParams } from "../utils/validateParams.js";
-import { fetchTransfers } from "../service/get.service.js";
-import { showTransactions } from "../views/showTransactions.js";
+import Transaction from '../models/transaction.model.js';
+import { createTransaction } from '../service/post.service.js';
+import { validateParams } from '../utils/validateParams.js';
+import { fetchTransfers } from '../service/get.service.js';
+import { showTransactions } from '../views/showTransactions.js';
 
-export async function controllerPost(e) {
-  e.preventDefault();
-
-  const inName = document.getElementById("inName");
-  const inValue = document.getElementById("inValue");
+export async function controllerPost() {
+  const inName = document.getElementById('inName');
+  const inValue = document.getElementById('inValue');
 
   const name = inName.value;
   const value = inValue.value;

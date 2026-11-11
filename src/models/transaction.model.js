@@ -2,11 +2,12 @@ export default class Transaction {
   #name;
   #value;
   #transactionDate;
+  #updateAt;
   constructor(name, value) {
     this.#name = name;
     this.#value = value;
-    this.#transactionDate = new Date().toLocaleDateString("pt-br", {
-      dateStyle: "medium",
+    this.#transactionDate = new Date().toLocaleDateString('pt-br', {
+      dateStyle: 'medium',
     });
   }
 
